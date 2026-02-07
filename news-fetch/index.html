@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="news-dashboard">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-title">
+                <i class="fas fa-newspaper"></i> News<span>Dashboard</span>
+            </div>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="total-articles">0</div>
+                    <div class="stat-label">Total Articles</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="today-articles">0</div>
+                    <div class="stat-label">Today</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="sources-count">0</div>
+                    <div class="stat-label">Sources</div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Controls -->
+        <div class="dashboard-controls">
+            <div class="controls-left">
+                <select class="category-filter" id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="technology">Technology</option>
+                    <option value="business">Business</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="finance">Finance</option>
+                    <option value="international">International</option>
+                </select>
+                
+                <select class="sort-select" id="sort-select">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="title">By Title</option>
+                    <option value="source">By Source</option>
+                </select>
+                
+                <input type="text" class="search-box" id="search-box" placeholder="Search articles...">
+            </div>
+            
+            <div class="controls-right">
+                <button class="refresh-btn" id="refresh-btn">
+                    <i class="fas fa-sync"></i> Refresh
+                </button>
+            </div>
+        </div>
+        
+        <!-- News Grid -->
+        <div class="news-grid" id="news-grid">
+            <!-- Articles will be dynamically inserted here -->
+        </div>
+        
+        <!-- Article Modal -->
+        <div class="article-modal" id="article-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-title"></h3>
+                    <button class="modal-close" id="modal-close">&times;</button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <!-- Modal content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <p>News Dashboard &copy; 2025 • Data provided by News API • Last updated: <span id="last-updated"></span></p>
+            <p>Total articles loaded: <span id="footer-article-count">0</span> • Bookmarked: <span id="bookmark-count">0</span></p>
+        </footer>
+    </div>
+
+    <input type="text">
+    <button id="btn">click me!!</button>
+    <div class="container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
