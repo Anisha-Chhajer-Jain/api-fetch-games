@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+    background-color: rgb(197, 165, 124);
+}
+.container{
+    height:70vh ;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center; 
+}
+.game{
+    height: 60vh;
+    width: 60vh;
+    /* border: 2px solid rgb(95, 42, 42); */
+    gap:1.5vmin;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    flex-wrap: wrap;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    background-color: rgb(218, 187, 146);
+    font-size: 10vh;
+}
+.reset-box{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    flex-wrap: wrap;
+}
+.boxxx{
+    height: 6vh;
+    width: 18vh;
+    background-color: bisque;
+}
+.champion{
+    font-size: 20vh;
+    padding: 5px;
+    color: black;
+}
